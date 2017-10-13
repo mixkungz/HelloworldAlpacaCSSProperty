@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- หรือ -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!-- ต้องทำการ link bootstrap จากเว็บ boostrap ก่อน (กรณีนี้หากไม่มีเน็ตจะไม่สามารถใช้งานได้) -->
+    <!-- หรือจะทำการโหลดไฟล์ css ของ bootstrap เข้ามาในเครื่องของเรา แล้วเรียกใช้ไฟล์ (พี่ใช้อันนี้นะ) -->
+    <div class="container">
+        <h1 class="text-center">ดูหนังออนไลน์</h1>
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://i.kinja-img.com/gawker-media/image/upload/s--JMT4bu5v--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/w48c3kblvxfky5ckwok1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="https://i.ytimg.com/vi/qmxo_jKcMDE/maxresdefault.jpg" alt="Second slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div> <!-- End row -->
+
+        <div class="row" style="margin-top:2em;">
+
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://pbs.twimg.com/media/DIBDRP1UwAAtU6J.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Thor Ragnarok</h4>
+                        <a href="https://www.siambit.me/" target="_blank"><p class="card-text">สนับสนุนหนังแท้กันเถอะอย่าดูเถื่อนเลย</p></a>
+                        <br>
+                        <a href="https://www.facebook.com/supawit.ruen" target="_blank" class="btn btn-primary btn-block">ดีชั่วอยู่ที่ตัวทำ สูงต่ำอยู่ที่เราแทง</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://f.ptcdn.info/476/052/000/ot5vlfb99ffkT5mbNNz-o.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Star Wars : The last jedi</h4>
+                        <a href="https://www.siambit.me/" target="_blank"><p class="card-text">สนับสนุนหนังแท้กันเถอะอย่าดูเถื่อนเลย</p></a>
+                        <br>
+                        <a href="https://goo.gl/23SD9T" target="_blank" class="btn btn-primary btn-block">การลงทุนย่อมมีความเสี่ยง</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="http://cdn.collider.com/wp-content/uploads/2017/06/black-panther-movie-poster-teaser.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Black panter</h4>
+                        <a href="https://www.siambit.me/" target="_blank"><p class="card-text">สนับสนุนหนังแท้กันเถอะอย่าดูเถื่อนเลย</p></a>
+                        <br>
+                        <a href="https://www.facebook.com/imgrbs" target="_blank" class="btn btn-primary btn-block">เหนือเพดานยังมีหลังคา</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End row -->
+            
+    </div> <!-- End Container -->
+</body>
+</html>
