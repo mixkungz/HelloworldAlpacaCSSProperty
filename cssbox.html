@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Box</title>
+</head>
+<style>
+    p{
+        background-color:lawngreen;
+        text-align: center;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+    }
+    .bggreen{
+        background: green;
+    }
+    .bgred{
+        background: red;
+    }
+    .addpaddingtop{
+        padding-top:10px; 
+    }
+    .addborderbottom{
+        border-bottom: 20px solid red;
+    }
+    .addborderleft{
+        border-left:10px solid black;
+    }
+    .addmarginleft{
+        margin-left: 20px;
+    }
+    .addmargintop{
+        margin-top:40px;
+    }
+    .borderradius{
+        border-radius: 10px;
+    }
+    .circle{
+        border-radius: 50%;
+    }
+    img{
+        display: block;
+        margin:0 auto;
+    }
+</style>
+<body>
+        <!-- ขอเขียนแบบ Internal นะเพื่อง่ายต่อการดูกัน -->
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/61/f2/71/61f271bb01d3b693943cae6ca63ec311.png" alt="">
+        <hr>
+        <p class="addpaddingtop addborderbottom addborderleft">CONTENT</p>
+        <hr>
+        <div class="bggreen addmarginleft"></div>
+        <div class="bgred addmargintop"></div>
+        <hr>
+        <div class="bggreen borderradius"></div>
+        <div class="bggreen addmargintop circle"></div>
+</body>
+</html>
