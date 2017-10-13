@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width:400px;
+        height: 400px;
+    }
+    .divbgcolor{
+        background: green;
+    }
+    @media (min-width:501px) and (max-width:1000px){
+        .divbgcolor{
+            background:yellow;
+        }
+    }
+    @media (max-width:500px){
+        .divbgcolor{
+            background:red;
+        }
+    }
+</style>
+<body>
+    <div class="divbgcolor"></div>
+</body>
+</html>
