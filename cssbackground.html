@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Background</title>
+</head>
+<style>
+    div{
+        width: 300px;
+        height: 300px;
+    }
+    .biggerdiv{
+        width: 600px;
+        height: 600px;
+    }
+    .biggestdiv{
+        width: 100%;
+        height: 700px;
+    }
+    .bgcolor{
+        background-color:deepskyblue;
+    }
+    .bgimage{
+        background:url('img/vader.jpg')
+    }
+    .bgposition{
+        background-position: right bottom;
+        /* เปลี่ยนตำแหน่งของรูป */
+    }
+    .bgrepeat{
+        background-repeat: no-repeat;
+    }
+    .bgsize{
+        background-size: cover;
+        /* cover คือมันจะบีบบังคับขยายรูปให้เต็มช่อง */
+
+        /* background-size:contain; */
+
+        /* contain คือ มันแค่จะขอให้รูปเต็มขนาดของรูปจริง(ให้โชว์ครบเท่าที่รูปต้นแบบ)*/
+        
+    }
+    .easyparallax{
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center top;
+    }
+    .inline{
+        display: inline;
+    }
+    .inline-block{
+        display: inline-block;
+    }
+    h1{
+        font-size: 50px;
+        text-align: center;
+        color:deepskyblue;
+    }
+</style>
+<body>   
+     <!-- ขอเขียนแบบ Internal นะเพื่อง่ายต่อการดูกัน -->
+     <div class="bgcolor"></div>
+     <hr>
+     <div class="bgimage"></div>
+     <hr>
+     <div class="bgimage bgposition"></div>
+     <!-- ปกติ position ของรูปจะเริ่มที่บนซ้าย -->
+     <hr>
+     <div class="inline">
+         <!-- ในกรณีที่กล่องใหญ่เกินขนาดของ รูปพื้นหลังมันจะ repeat รูปให้อัตโนมัติ -->
+        <div class="biggerdiv bgimage inline-block"></div>
+        <div class="biggerdiv bgimage bgrepeat inline-block"></div>
+     </div>
+     <hr>
+     <div class="biggestdiv bgimage bgsize"></div>
+     <hr>
+    <h1>เทคนิคการทำ parallax ด้วย css ง่ายๆ</h1>     
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="biggestdiv bgimage easyparallax"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
